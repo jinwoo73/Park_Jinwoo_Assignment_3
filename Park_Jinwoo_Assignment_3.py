@@ -1,12 +1,14 @@
 #Jinwoo Park
 #Kevin Markley
 #CSE 1321L section12
+import math
+
 
 #PhoneBill
 
 A = int(input("Account number: "))
 S = str(input("Service Type: "))
-if  (S == r or S == R):
+if  (S == "r" or S == "R"):
     B = int(input("Total minutes: "))
     if (B <= 50):
         print("Amount due: $15.00 ")
@@ -58,7 +60,7 @@ print ("Circle 1 radius is: ", r1)
 print ("Circle 2 center is: ", (x2, y2))
 print ("Circle 2 radius is: ", r2)
 
-D = sqrt ((x2 - x1) ** 2 + (y2 - y1) ** 2)
+D = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
 if (D >= r1 + r2):
     print ("Judgement: Circle 2 is completely outside circle 1. ")
 elif (D <= abs(r1 - r2)):
