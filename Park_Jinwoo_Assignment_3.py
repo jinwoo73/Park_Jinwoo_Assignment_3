@@ -3,7 +3,6 @@
 #CSE 1321L section12
 import math
 
-
 #PhoneBill
 
 A = int(input("Account number: "))
